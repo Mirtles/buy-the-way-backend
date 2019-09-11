@@ -14,4 +14,4 @@ setupDatabase()
   .then(_ =>
     app.listen(port, () => console.table({"server up:":`Port ${port}`}))
     )
-  .catch(err=>console.error(err))
+  .catch(err=>console.error(err)) 
