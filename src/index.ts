@@ -6,7 +6,8 @@ import setupDatabase from "./db"
 const port = process.env.PORT || 4000
 
 const app = createKoaServer({
-  controllers: [AdvertController]
+  controllers: [AdvertController],
+  cors:true,
 })
 
 setupDatabase()
